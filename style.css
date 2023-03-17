@@ -37,7 +37,7 @@ body{
 }
 
 /*guide*/
-#guide{
+#guide,#quiz{
 	height: auto;
 	width: 580px;
 	padding: 20px;
@@ -90,3 +90,77 @@ body{
   #guide #button button:hover{
 	 background: white;
   }
+
+
+/*quiz*/
+#quiz{
+	display: block;
+	height: 480px;
+	position: relative;
+}
+
+#quiz #quiz_header{
+	height: 60px;
+	width: 100%;
+	background: #fafafc;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	border-radius: 30px 0;
+}
+
+#quiz #quiz_header h1{
+	       	font-size: 28px;
+			 	margin: 0 20px;
+				color: #ff5235;
+}
+
+#quiz #quiz_header #timer {
+	height: 50px;
+	width: 200px;
+	background: #ff5235;
+	color: #e7f1fa;
+	border: 1px solid #b0c4d8;
+	font-size: 18px;
+	border-radius: 20px 5px;
+	display: flex;
+	flex-direction: row;
+	position: absolute;
+	right: 10px;
+}		
+
+#quiz #quiz_header #timer h6{
+	font-size: 20px;
+     display: grid;
+	 place-items: center;
+	 color: #fff;
+	 margin: 0 10px;	
+}
+
+#quiz #quiz_header #timer  #timer{
+	height: 44px;
+	width: 50px;
+     background: #fff;
+	 color: #f69d9e;
+	 border: 1px solid #b0c4b8;
+	 border-radius: 15px 7px;
+	 margin: 2px 0 0 27px;
+}
+
+
+/*Quiz Question*/
+#quiz #question{
+	position: absolute;
+	top: 90px;
+	display: flex;
+	flex-direction: row ;
+
+}
+
+#quiz #question h2{
+	font-size: 27px;
+}
+
