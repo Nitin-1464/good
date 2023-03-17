@@ -1,29 +1,30 @@
 let json ={ 
-    quetions :[ {
-        quetion :"hello"
+    quetions :[ 
+        {
+           quetion :'What does HTML stand for?',
+           answer : ["a) Hypertext Markup Language","b) Hyperlinks and Text Markup Language"],
+           ans : " Hypertext Markup Language"
          
-    }]
-
+        },
+        {
+            quetion :'Which HTML tag is used to define a hyperlink?',
+            answer : ["a) <link>","b)  <a>"],
+            ans : "  <a>"
+          
+          
+         }
+    ]
 };
 
-document.getElementById("quiz").innerHTML =
+console.log(json)
+document.getElementById("quiz").innerHTML += json.quetions[0].quetion;
+document.getElementById("quiz").innerHTML += json.quetions[0].answer;
+
+document.getElementById("quiz").innerHTML += json.quetions[1].quetion;
 
 
 
 
 
 
-function updateTime() {
-    // Create a new Date object
-    var now = new Date();
-  
-    // Get the current time as a string
-    var timeString = now.toLocaleTimeString();
-  
-    // Set the text of the clock element to the current time
-    document.getElementById("clock").innerHTML = timeString;
-  }
-  
-  // Call updateTime() every second to update the clock
-  setInterval(updateTime, 1000);
-  
+ 
