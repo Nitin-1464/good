@@ -210,7 +210,7 @@ let getItemOfTheLocalstorage = JSON.parse(localStorage.getItem("QuizData"));
 // Quiz Logics
 
 let arrOfQuestionLength = getItemOfTheLocalstorage.length;
-let questionlength = getItemOfTheLocalstorage[1].length;
+let questionlength = getItemOfTheLocalstorage[1];
 
 // get the type of the question and append in the select option
 for (let x = 1; x < arrOfQuestionLength; x++) {
